@@ -1,0 +1,136 @@
+body {
+  /* color: white; */
+  background: url(images/space.jpeg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arvo, serif;
+}
+
+/* style brand image */
+.navbar-brand img {
+  height: 30px;
+}
+/* style navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* used to overide bootstrap css styling of top 
+and bottom padding for navbar */
+.navbar {
+  padding: 0;
+}
+
+.nav a {
+  color: rgb(138, 136, 136);
+  font-size: 17px;
+  margin-right: 75px;
+  /* adding a transparent borer-bottom prevents line-height from shifting */
+  border-bottom: 1px solid transparent;
+  padding: 20px 0;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid #04f5ac;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='#fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:hover {
+  border-color: #fff;
+}
+
+/* style jumbotron */
+.header {
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.header h1 {
+  font-size: 80px;
+  letter-spacing: 2.5px;
+}
+
+.icons-container {
+  max-width: 1000px;
+}
+
+/* style icons using grid system */
+.col-md-4 {
+  text-align: center;
+  color: #fff;
+}
+
+.bodyimage {
+  height: 100px;
+}
+
+.icons p {
+  font-size: 15px;
+}
+
+/* style contact button */
+.contact {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.btn {
+  color: white;
+  background-color: #04f5ad85;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 70px;
+  letter-spacing: 1.3px;
+}
+
+.btn:hover {
+  background-color: #04f5adc5;
+  color: white;
+  border: none;
+}
+
+.button {
+  text-align: center;
+}
+/* style footer */
+.footer p {
+  margin: 0;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 10px 0;
+  text-align: center;
+  color: gray;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+
+/* use media queries to change icons size in small devices */
+@media (max-width: 768px) {
+  .bodyimage {
+    height: 70px;
+  }
+
+  .header h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header h1 {
+    font-size: 45px;
+  }
+}
